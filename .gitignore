@@ -1,0 +1,9 @@
+.gradle/
+.idea/
+.vscode/
+.pio/
+build/
+
+esp32/**/.gitignore
+pcb/.gitignore
+website/.gitignore

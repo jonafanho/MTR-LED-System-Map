@@ -1,0 +1,1318 @@
+{
+  "board": {
+    "3dviewports": [],
+    "design_settings": {
+      "defaults": {},
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "rules": {},
+      "track_widths": [],
+      "via_dimensions": []
+    },
+    "ipc2581": {
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": ""
+    },
+    "layer_pairs": [],
+    "layer_presets": [],
+    "viewports": []
+  },
+  "boards": [],
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "rule_severities": {
+      "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
+      "bus_to_bus_conflict": "error",
+      "bus_to_net_conflict": "error",
+      "different_unit_footprint": "error",
+      "different_unit_net": "error",
+      "duplicate_reference": "error",
+      "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
+      "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
+      "global_label_dangling": "warning",
+      "hier_label_mismatch": "error",
+      "label_dangling": "error",
+      "label_multiple_wires": "warning",
+      "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
+      "pin_not_connected": "error",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
+      "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
+      "similar_labels": "warning",
+      "similar_power": "warning",
+      "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
+      "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
+      "unit_value_mismatch": "error",
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "mtr_led_system_map.kicad_pro",
+    "version": 3
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      }
+    ],
+    "meta": {
+      "version": 4
+    },
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": []
+  },
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "",
+      "plot": "",
+      "pos_files": "",
+      "specctra_dsn": "",
+      "step": "",
+      "svg": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "schematic": {
+    "annotate_start_num": 0,
+    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_fmt_presets": [],
+    "bom_fmt_settings": {
+      "field_delimiter": ",",
+      "keep_line_breaks": false,
+      "keep_tabs": false,
+      "name": "CSV",
+      "ref_delimiter": ",",
+      "ref_range_delimiter": "",
+      "string_delimiter": "\""
+    },
+    "bom_presets": [],
+    "bom_settings": {
+      "exclude_dnp": false,
+      "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        }
+      ],
+      "filter_string": "",
+      "group_symbols": true,
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
+      "sort_asc": true,
+      "sort_field": "Reference"
+    },
+    "connection_grid_size": 50.0,
+    "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "field_names": [],
+      "intersheets_ref_own_page": false,
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
+      "label_size_ratio": 0.375,
+      "operating_point_overlay_i_precision": 3,
+      "operating_point_overlay_i_range": "~A",
+      "operating_point_overlay_v_precision": 3,
+      "operating_point_overlay_v_range": "~V",
+      "overbar_offset_ratio": 1.23,
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    },
+    "net_format_name": "",
+    "page_layout_descr_file": "",
+    "plot_directory": "",
+    "space_save_all_events": true,
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
+    "spice_save_all_voltages": false,
+    "subpart_first_id": 65,
+    "subpart_id_separator": 0
+  },
+  "sheets": [
+    [
+      "ebca9b74-4230-456d-9ae3-b0fb03ead083",
+      "Root"
+    ],
+    [
+      "4d234dcf-51bc-4847-8004-1c81a3c6da53",
+      "KTL R1"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "c083f7cd-466f-4cb5-9c16-6402402f13dd",
+      "KTL R2"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "d363cd8b-a657-4f63-adb2-6a5e0f854759",
+      "KTL R3 + TWL R1"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "ee66d1a6-4f4b-4da3-acaa-533d919fcbbe",
+      "TWL R2"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "25be994a-2c92-4fa2-b80f-77e6cc4a9ff4",
+      "ISL Y + TKL Y"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "78fc75e1-6e1b-495a-a269-32b281106a11",
+      "TWL R3 + ISL R1"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "edd5af00-3520-4187-95f5-65e1cf5f8188",
+      "ISL R2"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "36da8868-68ea-433b-b679-8de592081919",
+      "ISL R3 + TKL R1"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "81f45ac3-ab4a-47a5-9ce9-aea2d261f9a7",
+      "TKL R2 + KTL Y1"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "47107676-7ed5-4a97-9473-595811da2265",
+      "TCL Y"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "6ebe7e89-a841-4c04-b397-1e134af7d7b0",
+      "KTL G1"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "c1ecc2dd-58bc-4f29-9e08-e1b6429c27ba",
+      "KTL G2"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "37943597-f991-4060-9bf5-c615f0604fee",
+      "KTL G3"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "d77f9102-b1ae-434e-8898-85b1a113014d",
+      "KTL G4"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "b36ce402-f455-4d0d-9f39-ed94db1f9ac9",
+      "KTL Y + TWL Y"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "f1884839-5578-4123-ad87-be03d18c5ca2",
+      "TWL G1"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "3905c266-1d11-4cee-8087-1a26956d89d6",
+      "TWL G2"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "e118e582-986c-4f4b-85e1-86ad5bef227c",
+      "TWL G3"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "8126d0d0-a419-45bf-a59f-f76781a36562",
+      "TWL G4 + ISL G1"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "45861d2c-a5ac-429b-978a-1bbdde383ad1",
+      "ISL G2"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "f023c6cf-c218-45a2-80ca-3446ce830eef",
+      "ISL G3"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "117969bb-580e-4f42-afc3-ea2b2309b7a3",
+      "ISL G4"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "c894413a-b6f2-47c9-9472-e36922a56928",
+      "ISL G5 + TKL G1"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "ad0e1708-1d9b-4454-afe7-01d4d90da874",
+      "TKL G2"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ],
+    [
+      "512ec0b5-9426-4d37-a0cd-d8ab6fe9e930",
+      "TKL G3"
+    ],
+    [
+      "2f3d9f09-e361-4935-82db-d53e6d1d706f",
+      "LED 7"
+    ],
+    [
+      "6df0436e-b9eb-4dc5-b990-baaeaf6a0f5d",
+      "LED 8"
+    ],
+    [
+      "d4694dca-ed42-4d16-add0-d2fda1d7be8d",
+      "LED 4"
+    ],
+    [
+      "229080ac-ca57-4121-a469-76a237cf8d2c",
+      "LED 5"
+    ],
+    [
+      "87ba0b42-000e-4134-bd62-e1fda7c07e22",
+      "LED 6"
+    ],
+    [
+      "51ac0115-7a6d-4c30-89a4-2e202354f184",
+      "LED 3"
+    ],
+    [
+      "689ed1af-4b8a-47b6-862e-7c7f693339be",
+      "LED 2"
+    ],
+    [
+      "c898f29d-5a4e-4dc3-965e-96a95fb386e8",
+      "LED 1"
+    ]
+  ],
+  "text_variables": {}
+}
