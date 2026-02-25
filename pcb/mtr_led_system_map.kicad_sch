@@ -3985,6 +3985,12 @@
 		(uuid "cb296d2e-a98d-4997-860c-9034f3461d12")
 	)
 	(junction
+		(at 100.33 269.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb89153f-cbb6-457a-a28b-c6ca10b7bfb1")
+	)
+	(junction
 		(at 127 303.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5577,6 +5583,16 @@
 			(type default)
 		)
 		(uuid "1bdbacbb-c4c3-451b-8b0f-ae8fc4bbd1c0")
+	)
+	(wire
+		(pts
+			(xy 99.06 269.24) (xy 100.33 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bf8ae46-baa5-4043-a1fe-4ce73db5bc3b")
 	)
 	(wire
 		(pts
@@ -15737,6 +15753,16 @@
 			(justify left bottom)
 		)
 		(uuid "9ce6192f-b9ef-4ee7-bd34-d2d0918f82fe")
+	)
+	(label "KTL_Y2"
+		(at 99.06 269.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a287bde8-d270-40a3-bca7-5f12256ad364")
 	)
 	(label "ISL_Y1"
 		(at 99.06 170.18 180)
