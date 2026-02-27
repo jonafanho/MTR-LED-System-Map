@@ -3175,6 +3175,12 @@
 		(uuid "40305b82-41a9-48ab-afb8-1c4539504634")
 	)
 	(junction
+		(at 373.38 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41c2215c-8f65-4d80-8ce1-a4cb92820677")
+	)
+	(junction
 		(at 543.56 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8821,6 +8827,16 @@
 			(type default)
 		)
 		(uuid "67247671-8144-4a51-96da-c9ea2b61a0a4")
+	)
+	(wire
+		(pts
+			(xy 373.38 218.44) (xy 373.38 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6779360d-ab74-409e-8361-dce96b358f99")
 	)
 	(wire
 		(pts
@@ -27910,6 +27926,72 @@
 			(project "mtr_led_system_map"
 				(path "/ebca9b74-4230-456d-9ae3-b0fb03ead083"
 					(reference "R221")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 373.38 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5dbe9a83-e74d-4bd7-8242-8beb4b0cb4a8")
+		(property "Reference" "#PWR0323"
+			(at 373.38 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 373.38 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 373.38 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 373.38 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 373.38 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e012058c-6ee6-4655-96b3-c9c39cb43115")
+		)
+		(instances
+			(project "mtr_led_system_map"
+				(path "/ebca9b74-4230-456d-9ae3-b0fb03ead083"
+					(reference "#PWR0323")
 					(unit 1)
 				)
 			)
