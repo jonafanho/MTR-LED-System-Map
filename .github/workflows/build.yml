@@ -1,8 +1,8 @@
-name: PlatformIO Build
+name: Build
 on: [ pull_request, push, workflow_dispatch ]
 
 jobs:
-  build:
+  platformio-build:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -29,4 +29,4 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: ESP32-Firmware
-          path: esp32/.pio/build/**/firmware.*
+          path: esp32/.pio/build/esp32/firmware.*
