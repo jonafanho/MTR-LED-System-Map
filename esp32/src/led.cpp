@@ -3,7 +3,6 @@
 
 void LED::init(const uint8_t brightness)
 {
-
     pinMode(PIN_LATCH, OUTPUT);
     digitalWrite(PIN_LATCH, HIGH);
 
@@ -17,7 +16,7 @@ void LED::init(const uint8_t brightness)
     setBrightness(brightness);
 
     clear();
-    shift();
+    push();
 }
 
 void LED::setBrightness(uint8_t brightness)
@@ -25,12 +24,22 @@ void LED::setBrightness(uint8_t brightness)
     ledcWrite(PWM_CHANNEL, 0xFF - brightness);
 }
 
+void LED::set(uint8_t position)
+{
+    uint8_t index = position / 8;
+    if (index < COUNT_595)
+    {
+        uint8_t bit = (uint8_t)(1u << (position % 8));
+        buffer[index] &= (uint8_t)~bit;
+    }
+}
+
 void LED::clear()
 {
     buffer.fill(0xFF);
 }
 
-void LED::shift()
+void LED::push()
 {
     SPI.beginTransaction(SPISettings(SPI_SPEED, MSBFIRST, SPI_MODE0));
     digitalWrite(PIN_LATCH, LOW);

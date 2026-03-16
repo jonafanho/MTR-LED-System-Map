@@ -9,7 +9,9 @@ class LED
 public:
     void init(const uint8_t brightness);
     void setBrightness(uint8_t brightness);
+    void set(uint8_t position);
     void clear();
+    void push();
 
 private:
     static constexpr uint8_t PIN_DATA = 4;
@@ -25,8 +27,6 @@ private:
     static constexpr uint32_t SPI_SPEED = 8000000;
 
     std::array<uint8_t, COUNT_595> buffer{};
-
-    void shift();
 };
 
 #endif

@@ -1,6 +1,7 @@
-#include "led.h"
+#include "sequence.h"
 
 LED led;
+Sequence sequence(led);
 
 void setup()
 {
@@ -9,4 +10,5 @@ void setup()
 
 void loop()
 {
+    sequence.tick();
 }

@@ -2,7 +2,8 @@ name: Build
 on: [ pull_request, push, workflow_dispatch ]
 
 jobs:
-  platformio-build:
+  build-platformio:
+    name: Build PlatformIO
     runs-on: ubuntu-latest
     defaults:
       run:
