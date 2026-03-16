@@ -27,7 +27,7 @@ void Sequence::next()
         return;
     }
 
-    nextUpdate = 0;
+    lastMillis = 0;
     state++;
 
     if (state >= 3)
@@ -46,53 +46,52 @@ void Sequence::tick()
     }
 
     unsigned long currentMillis = millis();
-    if ((long)(currentMillis - nextUpdate) < 0)
+    if (lastMillis / (FLASH_FREQUENCY / 2) != currentMillis / (FLASH_FREQUENCY / 2))
     {
-        return;
+        led.clear();
+        bool flash = currentMillis % FLASH_FREQUENCY < FLASH_FREQUENCY / 2;
+        bool isNotLastStation = index + 1 < stationCount;
+
+        // This station
+        if (state == 0)
+        {
+            led.set(stationGroups[index].station);
+        }
+
+        // This interchange
+        if (state == 0 && flash)
+        {
+            setInterchanges(stationGroups[index]);
+        }
+
+        // This arrow
+        if (isNotLastStation && (flash || state == 2))
+        {
+            led.set(stationGroups[index].arrow);
+        }
+
+        // Next station
+        if (isNotLastStation && (state == 0 || state == 1 || flash))
+        {
+            led.set(stationGroups[index + 1].station);
+        }
+
+        // Next interchange
+        if (isNotLastStation && state == 2 && flash)
+        {
+            setInterchanges(stationGroups[index + 1]);
+        }
+
+        // Remaining stations
+        for (uint8_t i = index + 2; i < stationCount; i++)
+        {
+            led.set(stationGroups[i].station);
+        }
+
+        led.push();
     }
 
-    led.clear();
-    bool flash = currentMillis % FLASH_FREQUENCY < FLASH_FREQUENCY / 2;
-    bool isNotLastStation = index + 1 < stationCount;
-
-    // This station
-    if (state == 0)
-    {
-        led.set(stationGroups[index].station);
-    }
-
-    // This interchange
-    if (state == 0 && flash)
-    {
-        setInterchanges(stationGroups[index]);
-    }
-
-    // This arrow
-    if (isNotLastStation && (flash || state == 2))
-    {
-        led.set(stationGroups[index].arrow);
-    }
-
-    // Next station
-    if (isNotLastStation && (state == 0 || state == 1 || flash))
-    {
-        led.set(stationGroups[index + 1].station);
-    }
-
-    // Next interchange
-    if (isNotLastStation && state == 2 && flash)
-    {
-        setInterchanges(stationGroups[index + 1]);
-    }
-
-    // Remaining stations
-    for (uint8_t i = index + 2; i < stationCount; i++)
-    {
-        led.set(stationGroups[i].station);
-    }
-
-    led.push();
-    nextUpdate = currentMillis + FLASH_FREQUENCY / 2;
+    lastMillis = currentMillis;
 }
 
 void Sequence::setInterchanges(const StationGroup &stationGroup)

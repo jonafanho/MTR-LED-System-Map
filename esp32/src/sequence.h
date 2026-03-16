@@ -29,7 +29,7 @@ private:
 
     uint8_t index = 0;
     uint8_t state = 0; // Doors opened, doors closed, next station
-    unsigned long nextUpdate = 0;
+    unsigned long lastMillis = 0;
 
     const StationGroup *stationGroups = nullptr;
     uint8_t stationCount = 0;
