@@ -29,14 +29,13 @@ void LED::set(uint8_t position)
     uint8_t index = position / 8;
     if (index < COUNT_595)
     {
-        uint8_t bit = (uint8_t)(1u << (position % 8));
-        buffer[index] &= (uint8_t)~bit;
+        buffer[COUNT_595 - index - 1] |= (1 << (position % 8));
     }
 }
 
 void LED::clear()
 {
-    buffer.fill(0xFF);
+    buffer.fill(0);
 }
 
 void LED::push()

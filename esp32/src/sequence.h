@@ -5,18 +5,20 @@
 #include <array>
 #include "led.h"
 
+struct StationGroup
+{
+    const uint8_t station;
+    const uint8_t interchangeCount;
+    const uint8_t *interchanges;
+    const uint8_t arrow;
+};
+
 class Sequence
 {
 public:
     explicit Sequence(LED &led);
 
-    struct InterchangeGroup
-    {
-        uint8_t count;
-        const uint8_t *interchanges;
-    };
-
-    void start(const uint8_t *stations, const InterchangeGroup *interchangeGroups, const uint8_t *arrows, const uint8_t stationsCount);
+    void start(const StationGroup *stationGroups, const uint8_t stationCount);
     void next();
     void tick();
 
@@ -29,12 +31,10 @@ private:
     uint8_t state = 0; // Doors opened, doors closed, next station
     unsigned long nextUpdate = 0;
 
-    const uint8_t *stations = nullptr;
-    const InterchangeGroup *interchangeGroups = nullptr;
-    const uint8_t *arrows = nullptr;
-    uint8_t stationsCount = 0;
+    const StationGroup *stationGroups = nullptr;
+    uint8_t stationCount = 0;
 
-    void setInterchanges(const InterchangeGroup &interchangeGroup);
+    void setInterchanges(const StationGroup &stationGroup);
 };
 
 #endif
