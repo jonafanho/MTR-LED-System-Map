@@ -1,5 +1,4 @@
-#ifndef LED_H
-#define LED_H
+#pragma once
 
 #include <Arduino.h>
 #include <array>
@@ -28,5 +27,3 @@ private:
 
     std::array<uint8_t, COUNT_595> buffer{};
 };
-
-#endif

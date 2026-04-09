@@ -2,29 +2,30 @@
 
 Sequence::Sequence(LED &led) : led(led) {}
 
-void Sequence::start(const StationGroup *stationGroups, const uint8_t stationCount)
+void Sequence::start(const StationGroup *stationGroups, const uint8_t stationCount, const bool reversed)
 {
     this->stationGroups = stationGroups;
     this->stationCount = stationCount;
+    this->reversed = reversed;
 
     index = 0;
     state = 0;
 }
 
-void Sequence::next()
+bool Sequence::next()
 {
     if (stationCount < 2)
     {
         index = 0;
         state = 0;
-        return;
+        return true;
     }
 
     if (index >= stationCount - 1)
     {
         index = stationCount - 1;
         state = 0;
-        return;
+        return true;
     }
 
     lastMillis = 0;
@@ -35,6 +36,8 @@ void Sequence::next()
         index++;
         state = 0;
     }
+
+    return false;
 }
 
 void Sequence::tick()
@@ -50,40 +53,44 @@ void Sequence::tick()
     {
         led.clear();
         bool flash = currentMillis % FLASH_FREQUENCY < FLASH_FREQUENCY / 2;
-        bool isNotLastStation = index + 1 < stationCount;
+        int index1 = reversed ? (int)stationCount - (int)index - 1 : (int)index;
+        int step = reversed ? -1 : 1;
+        int index2 = index1 + step;
+        int index3 = index1 + 2 * step;
+        bool isNotLastStation = index2 >= 0 && index2 < stationCount;
 
         // This station
         if (state == 0)
         {
-            led.set(stationGroups[index].station);
+            led.set(stationGroups[index1].station);
         }
 
         // This interchange
         if (state == 0 && flash)
         {
-            setInterchanges(stationGroups[index]);
+            setInterchanges(stationGroups[index1]);
         }
 
         // This arrow
         if (isNotLastStation && (flash || state == 2))
         {
-            led.set(stationGroups[index].arrow);
+            led.set(reversed ? stationGroups[index1].arrow2 : stationGroups[index1].arrow1);
         }
 
         // Next station
         if (isNotLastStation && (state == 0 || state == 1 || flash))
         {
-            led.set(stationGroups[index + 1].station);
+            led.set(stationGroups[index2].station);
         }
 
         // Next interchange
         if (isNotLastStation && state == 2 && flash)
         {
-            setInterchanges(stationGroups[index + 1]);
+            setInterchanges(stationGroups[index2]);
         }
 
         // Remaining stations
-        for (uint8_t i = index + 2; i < stationCount; i++)
+        for (int i = index3; reversed ? (i >= 0) : (i < stationCount); i += step)
         {
             led.set(stationGroups[i].station);
         }
@@ -96,12 +103,12 @@ void Sequence::tick()
 
 void Sequence::setInterchanges(const StationGroup &stationGroup)
 {
-
-    if (stationGroup.interchanges)
+    const InterchangeGroup &interchangeGroup = reversed ? stationGroup.interchangeGroup2 : stationGroup.interchangeGroup1;
+    if (interchangeGroup.interchangeCount > 0)
     {
-        for (uint8_t i = 0; i < stationGroup.interchangeCount; i++)
+        for (uint8_t i = 0; i < interchangeGroup.interchangeCount; i++)
         {
-            led.set(stationGroup.interchanges[i]);
+            led.set(interchangeGroup.interchanges[i]);
         }
     }
 }

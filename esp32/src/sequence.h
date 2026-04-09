@@ -1,16 +1,22 @@
-#ifndef SEQUENCE_H
-#define SEQUENCE_H
+#pragma once
 
 #include <Arduino.h>
 #include <array>
 #include "led.h"
 
+struct InterchangeGroup
+{
+    const uint8_t interchangeCount;
+    const uint8_t *interchanges;
+};
+
 struct StationGroup
 {
     const uint8_t station;
-    const uint8_t interchangeCount;
-    const uint8_t *interchanges;
-    const uint8_t arrow;
+    const InterchangeGroup interchangeGroup1;
+    const InterchangeGroup interchangeGroup2;
+    const uint8_t arrow1;
+    const uint8_t arrow2;
 };
 
 class Sequence
@@ -18,8 +24,8 @@ class Sequence
 public:
     explicit Sequence(LED &led);
 
-    void start(const StationGroup *stationGroups, const uint8_t stationCount);
-    void next();
+    void start(const StationGroup *stationGroups, const uint8_t stationCount, const bool reversed);
+    bool next();
     void tick();
 
 private:
@@ -33,8 +39,7 @@ private:
 
     const StationGroup *stationGroups = nullptr;
     uint8_t stationCount = 0;
+    bool reversed;
 
     void setInterchanges(const StationGroup &stationGroup);
 };
-
-#endif
